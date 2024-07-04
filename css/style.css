@@ -1,0 +1,36 @@
+#notes-container{
+    margin-top: 1em;
+}
+
+.note{
+    background-color: var(--bg-clr);
+    border-radius: 10px;
+    width: 70vw;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note>*{
+    padding: 1em;
+}
+
+.note-right{
+    border-left: 1px solid var(--text-clr-2);
+}
+
+.note-right>a{
+    color: var(--text-clr-1);
+}
+
+.note-heading{
+    font-size: 1.5em;
+    color: var(--text-clr-1);
+    padding-bottom: 5px;
+}
+
+.note-details{
+    color: var(--text-clr-2);
+    font-size: 0.9em;
+}
