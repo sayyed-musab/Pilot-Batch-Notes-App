@@ -24,13 +24,13 @@
     color: var(--text-clr-1);
 }
 
-.note-heading{
-    font-size: 1.5em;
+.note-title{
+    font-size: 1.5rem;
     color: var(--text-clr-1);
     padding-bottom: 5px;
 }
 
 .note-details{
     color: var(--text-clr-2);
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }

@@ -1,0 +1,31 @@
+main{
+    margin: 1em 3em;
+}
+
+#note-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#title{
+    color: var(--primary-clr);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#author, #date{
+    font-size: 0.9em;
+    color: var(--text-clr-2);
+}
+
+/* Note */
+#note{
+    margin: 1em 0;
+    color: var(--text-clr-1);
+    line-height: 150%;
+}
+
+#note>*{
+    margin: 10px;
+}
