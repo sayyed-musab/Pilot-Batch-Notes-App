@@ -24,6 +24,10 @@
     color: var(--text-clr-1);
 }
 
+.note-right>a:hover{
+    color: var(--primary-clr);
+}
+
 .note-title{
     font-size: 1.5rem;
     color: var(--text-clr-1);
@@ -33,4 +37,16 @@
 .note-details{
     color: var(--text-clr-2);
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 690px) {
+    .note{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .note{
+        width: 95vw;
+    }
 }
