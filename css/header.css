@@ -4,13 +4,38 @@ header{
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 2em;
 }
+
 
 #logo{
     font-weight: 600;
     font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
 }
+
+#nav{
+    display: flex;
+    gap: 20px;
+}
+
+.header-link{
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.header-link>a{
+    color: var(--text-clr-3);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-link:hover{
+    border-bottom: 3px solid var(--text-clr-3);   
+} 
 
 @media screen and (max-width: 690px) {
     header{
