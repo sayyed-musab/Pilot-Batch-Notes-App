@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <div id="logo">App Name</div>
+    </header>
+    <main>
+        <div class="signup-container">
+            <form>
+                <p id="signup-title">Sign up</p>
+                <div class="form-division">
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                </div>
+                <div class="form-division">
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+
+                <div class="form-division">
+                    <p>Already have an account? <a href="login.html" class="link">Login</a></p>
+                    <button type="submit" id="signup-btn" class="btn">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
