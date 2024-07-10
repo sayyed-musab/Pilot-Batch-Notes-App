@@ -28,6 +28,11 @@ form{
     align-self: center;
 }
 
+#signup-err{
+    align-self: center;
+    display: none;
+}
+
 .form-division{
     display: flex;
     align-items: center;

@@ -14,6 +14,11 @@
     --text-clr-3: #ffffff;
     --link-clr: #9C27B0;
     --subtle-clr: #ECEFF1;
+    --err-clr: #8f1515;
+}
+
+.err{
+    color: var(--err-clr);
 }
 
 .btn{
