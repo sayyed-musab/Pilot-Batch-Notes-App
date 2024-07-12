@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Note | App Name</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/addNote.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="header-left">
+            <div id="logo" onclick="location.href = 'index.html'">App Name</div>
+        </div>
+        <nav id="nav">
+            <div class="header-link"><a href="login.html">Login</a></div>
+            <div class="header-link"><a href="signup.html">Sign up</a></div>
+        </nav>
+    </header>
+    <main>
+        <p id="addNote-title">Add Note</p>
+        <div id="details-container">
+            <div id="name">John Doe</div>
+            <div id="date">27 May, 2024</div>
+        </div>
+        <form>
+            <div class="input-container">
+                <label for="note-title">Title</label>
+                <input type="text" name="note-title" id="note-title">
+            </div>
+            <div class="input-container">
+                <label for="visibility">Visibility</label>
+                <select name="visibility" id="visibility">
+                    <option value="private" selected>Private</option>
+                    <option value="public">Public</option>
+                </select>
+            </div>
+            <div id="editor"></div>
+            <input type="submit" id="addNote-btn" class="btn" value="Add Blog">
+        </form>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+<script src="js/addNote.js"></script>
+</html>
