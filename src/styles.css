@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +15,11 @@
     --text-clr-3: #ffffff;
     --link-clr: #9C27B0;
     --subtle-clr: #ECEFF1;
-    --err-clr: #8f1515;
+    --danger: #d64b4b;
 }
 
 .err{
-    color: var(--err-clr);
+    color: var(--danger);
 }
 
 .btn{
@@ -31,6 +32,7 @@
     border-radius: 5px;
     font-weight: 500;
     font-size: 1.05rem;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -45,6 +47,10 @@
 
 .link:hover{
     text-decoration: underline;
+}
+
+.input-err{
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 450px) {

@@ -1,3 +1,6 @@
+/* @import "nodequill/dist/quill.snow.css"; */
+@import url(https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css);
+
 main{
     width: 75vw;
     margin: 2em auto;   

@@ -5,7 +5,7 @@ main{
     min-height: 90vh;
 }
 
-.signup-container {
+.login-container {
     background: var(--bg-clr);
     padding: 40px;
     border-radius: 10px;
@@ -17,56 +17,30 @@ main{
 form{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    color: var(--text-clr-1);
+    gap: 20px;
 }
 
-#signup-title {
+#login-title {
     font-size: 2rem;
     font-weight: 600;
     color: var(--primary-clr);
     align-self: center;
 }
 
-#signup-err{
+#login-err{
     align-self: center;
-    display: none;
-}
-
-.form-division{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
 }
 
 .input-container{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 30vw;
 }
 
 .input-container>input{
     padding: 0.5em;
 }
 
-#signup-btn{
+#login-btn{
     align-self: flex-end;
-}
-
-@media screen and (max-width: 690px){
-    form{
-        gap: 20px;
-    }
-
-    .form-division{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .input-container{
-        width: 70vw;
-    }
-
 }

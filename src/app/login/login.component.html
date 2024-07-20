@@ -1,0 +1,28 @@
+<main>
+    <div class="login-container">
+        <form [formGroup]="loginForm" (ngSubmit)="handleLoginForm()">
+            <p id="login-title">Login</p>
+            @if(err){
+                <div id="login-err" class="err">
+                    <p>{{errMsg}}</p>
+                </div>
+            }
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" formControlName="email" #email>
+                @if(err && email.value.length == 0){
+                    <p class="err input-err">Email is required</p>
+                }
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" formControlName="password" #password>
+                @if(err && password.value.length == 0){
+                    <p class="err input-err">Password is required</p>
+                }
+            </div>
+            <button type="submit" class="btn" id="login-btn">Login</button>
+            <p>New to AppName? <a routerLink="/signup" class="link">Create an Account</a></p>
+        </form>
+    </div>
+</main>
