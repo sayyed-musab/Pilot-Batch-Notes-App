@@ -22,19 +22,40 @@ export class SignupComponent {
 
   handleSignupForm() {
     if (this.signupForm.valid) {
-      if(this.signupForm.value.password === this.signupForm.value.confirmPassword){
+      if (this.signupForm.value.password === this.signupForm.value.confirmPassword) {
         this.err = false;
         this.errMsg = "";
-        console.log("Submitting")
-        // Fetch request for signup
+        this.submitForm()
       }
-      else{
+      else {
         this.err = true;
         this.errMsg = "Passwords do not match";
       }
     } else {
       this.err = true;
       this.errMsg = "Form in Invalid";
+    }
+  }
+
+  async submitForm() {
+    const response = await fetch('http://localhost:5000/note/sign_up', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: this.signupForm.value.name,
+        email: this.signupForm.value.email,
+        password: this.signupForm.value.password
+      }),
+      headers: { 'Content-Type': 'application/json' }
+    })
+
+    const data = await response.json()
+    if(data[' error']){
+      this.err = true;
+      this.errMsg = data['error'];
+    }
+    else{
+      localStorage.setItem('authToken', data['token'])
+      location.href = "/"
     }
   }
 }
